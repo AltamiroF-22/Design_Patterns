@@ -1,5 +1,5 @@
-const sayWelcome = (name: string): void => {
-  console.log(`Welcome ${name}`);
+const sayWelcome = (name: string): string => {
+  return `Welcome ${name.charAt(0).toUpperCase()}${name.slice(1)}`;
 };
 
-sayWelcome("Altamiro");
+console.log(sayWelcome("altamiro"));
